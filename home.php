@@ -7,7 +7,7 @@
                     <a href="/archives"><img src="<?php bloginfo('template_url');?>/image/header.jpg"></a>
                 </div>
                 <div class="nickname"><?php bloginfo('name'); ?></div>
-                <div class="description"><?php bloginfo('description'); ?></div>
+                <div class="description"><p><?php bloginfo('description'); ?></p></div>
             
                 <div class="links">
                     <a class="link-item" title="Blog" href="/">
@@ -23,6 +23,5 @@
                     </a>
             </div>
         </div>
-    </div>
         
 <?php get_footer(); ?>
