@@ -4,7 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Yuehan Liu</title>
 <!-- Stylesheets -->
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css; ?>" type="text/css" media="screen" />
+<script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/tocbot.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
