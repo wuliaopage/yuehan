@@ -6,7 +6,7 @@
             </div>
             <div class="nickname"><?php bloginfo('name'); ?></div>
             <div class="description"><p><?php bloginfo('description'); ?></p></div>
-        
+        123123123
             <div class="links">
                 <a class="link-item" title="Blog" href="/">
                     <i class="iconfont icon-blog"></i>
