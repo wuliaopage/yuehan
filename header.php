@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Yuehan Liu</title>
 <!-- Stylesheets -->
-<link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
 </head>
 <body>
 <div class="wrapper">
@@ -13,9 +13,7 @@
             <div class="container">
                 <div class="navbar-header header-logo"><a href="/">Yuehan Liu</a></div>
                 <div class="menu navbar-right">
-                    
                         <a class="menu-item" href="/archives">Posts</a>
-                    
                     <input id="switch_default" type="checkbox" class="switch_default">
                     <label for="switch_default" class="toggleBtn"></label>
                 </div>
