@@ -2,18 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Yuehan Liu</title>
+<title><?php bloginfo('name'); ?></title>
 <!-- Stylesheets -->
-<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css; ?>" type="text/css" media="screen" />
+<link rel="icon" href="<?php bloginfo('template_url');?>/favicon.ico">
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style.css; ?>" type="text/css" media="screen" />
+<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/tocbot.min.js"></script>
+<?php wp_head(); ?>
 </head>
 <body>
 <div class="wrapper">
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="navbar-header header-logo"><a href="/">Yuehan Liu</a></div>
+                <div class="navbar-header header-logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
                 <div class="menu navbar-right">
                         <a class="menu-item" href="/archives">Posts</a>
                     <input id="switch_default" type="checkbox" class="switch_default">
