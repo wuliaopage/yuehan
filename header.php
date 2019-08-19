@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Yuehan Liu</title>
 <!-- Stylesheets -->
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
 </head>
 <body>
 <div class="wrapper">
