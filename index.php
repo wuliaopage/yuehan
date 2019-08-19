@@ -1,3 +1,1 @@
-<html>
-<?php
-</html>
+<?php get_header(); ?>
