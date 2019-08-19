@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="navbar-header header-logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
                 <div class="menu navbar-right">
-                        <a class="menu-item" href="/archives">Posts</a>
+                        <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
                     <input id="switch_default" type="checkbox" class="switch_default">
                     <label for="switch_default" class="toggleBtn"></label>
                 </div>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="menu" id="mobile-menu">
                     
-                        <a class="menu-item" href="/archives">Posts</a>
+                        <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
                     
                 </div>
             </div>
