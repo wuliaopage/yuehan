@@ -5,7 +5,7 @@
 <title><?php bloginfo('name'); ?></title>
 <!-- Stylesheets -->
 <link rel="icon" href="<?php bloginfo('template_url');?>/favicon.ico">
-<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style.css; ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style.css" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/tocbot.min.js"></script>
