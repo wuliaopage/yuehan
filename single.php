@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-
-<article class="post-wrap">
+<div class="container">
+    <article class="post-wrap">
         <header class="post-header">
             <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             
@@ -21,7 +21,7 @@
         </header>
 
         <div class="post-content">
-            <?php the_content(); ?>
+            <?php the_excerpt(); ?> 
         </div>
 
         
@@ -73,6 +73,6 @@
 
 
     </article>
-
+</div>
 
 <?php get_footer(); ?>
