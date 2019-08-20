@@ -8,7 +8,7 @@
             <div class="description"><p><?php bloginfo('description'); ?></p></div>
         
             <div class="links">
-                <a class="link-item" title="Blog" href="/">
+                <a class="link-item" title="Blog" href="http://www.yuehanliu.com/?page_id=43">
                     <i class="iconfont icon-blog"></i>
                 </a>
             
