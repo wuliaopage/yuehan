@@ -33,11 +33,9 @@
             <div class="container">
                 <div class="navbar-header header-logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
                 <div class="menu navbar-right">
-                    <ul id="navigation" class="grid_8">
                         <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
-                        <li <?php if (is_home()) { echo 'class="current"';} ?>><a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">主页</a></li>
-                    </ul>
-                    <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
+                        <a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">主页</a>
+                        <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
                     <input id="switch_default" type="checkbox" class="switch_default">
                     <label for="switch_default" class="toggleBtn"></label>
                 </div>
