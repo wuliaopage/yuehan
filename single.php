@@ -3,7 +3,7 @@
 <div class="container">
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_content(); ?></a></h1>
+            <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             
                 <div class="post-meta">
                     
@@ -21,7 +21,7 @@
         </header>
 
         <div class="post-content">
-            <?php the_content(); ?> 
+            <?php echo $post->post_content;?> 
         </div>
 
         
