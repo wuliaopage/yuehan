@@ -21,7 +21,7 @@
         </header>
 
         <div class="post-content">
-            <?php the_content(); ?> 
+            <?php get_the_content(); ?> 
         </div>
 
         
