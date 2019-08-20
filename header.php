@@ -37,7 +37,7 @@
                         <?php 
                             $pages = get_pages(); 
                             foreach ( $pages as $page ) {
-                                $option = '<a class="menu-item" value="' . get_page_link( $page->ID ) . '">';
+                                $option = '<a class="menu-item" href="' . get_page_link( $page->ID ) . '">';
                                 $option .= $page->post_title;
                                 $option .= '</a>';
                                 echo $option;
