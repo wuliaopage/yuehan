@@ -67,13 +67,13 @@
             </div>
         </section>
         <section class="post-nav">
-            
+        <?php comments_template(); ?>
             
         </section>
 
 
     </article>
-    <?php comments_template(); ?>
+    
 </div>
 
 <?php get_footer(); ?>
