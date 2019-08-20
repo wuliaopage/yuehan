@@ -35,7 +35,7 @@
                 <div class="menu navbar-right">
                         <a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">Home</a>
                         <?php 
-                            $pages = get_pages(); 
+                            $pages = get_pages('sort_column=menu_order'); 
                             foreach ( $pages as $page ) {
                                 $option = '<a class="menu-item" href="' . get_page_link( $page->ID ) . '">';
                                 $option .= $page->post_title;
