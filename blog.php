@@ -20,9 +20,6 @@ Template Name: Blog List
             <?php edit_post_link('编辑', ' &bull; ', ''); ?>
             <?php the_excerpt(); ?>
             <?php the_content('阅读全文...'); ?>
-
-
-            
             </div>
         </div>
     <?php endwhile; ?>
