@@ -33,9 +33,16 @@
             <div class="container">
                 <div class="navbar-header header-logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
                 <div class="menu navbar-right">
-                        <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
-                        <a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">主页</a>
-                        <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
+                        <a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">Home</a>
+                        <?php 
+                            $pages = get_pages(); 
+                            foreach ( $pages as $page ) {
+                                $option = '<a class="menu-item" value="' . get_page_link( $page->ID ) . '">';
+                                $option .= $page->post_title;
+                                $option .= '</a>';
+                                echo $option;
+                            }
+                        ?>
                     <input id="switch_default" type="checkbox" class="switch_default">
                     <label for="switch_default" class="toggleBtn"></label>
                 </div>
