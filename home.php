@@ -2,7 +2,7 @@
     <div class="container">
         <div class="intro">
             <div class="avatar">
-                <a href="http://www.yuehanliu.com/?page_id=43"><img src="<?php the_custom_header_markup();?>"></a>
+                <a href="http://www.yuehanliu.com/?page_id=43"><?php the_custom_header_markup();?></a>
             </div>
             <div class="nickname"><?php bloginfo('name'); ?></div>
             <div class="description"><p><?php bloginfo('description'); ?></p></div>
