@@ -61,9 +61,9 @@
                 </span>
             </div>
             <div>
-                <a href="javascript:window.history.back();">back</a>
+                <a href="javascript:window.history.back();">Back</a>
                 <span>· </span>
-                <a href="/">home</a>
+                <a href="/">Home</a>
             </div>
         </section>
         <section class="post-nav">
