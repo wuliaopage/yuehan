@@ -19,7 +19,8 @@
                 <a class="link-item" title="Instagram" href>
                     <i class="iconfont icon-instagram"></i>
                 </a>
+            </div>
         </div>
-    </div>
+    </div>  
 
 <?php get_footer(); ?>
