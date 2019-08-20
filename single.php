@@ -63,6 +63,8 @@
             <div>
                 <a href="javascript:window.history.back();">Back</a>
                 <span>· </span>
+                <?php posts_nav_link(); ?>
+                <span>· </span>
                 <a href="/">Home</a>
             </div>
         </section>
