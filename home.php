@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    <div class="container">
         <div class="intro">
             <div class="avatar">
                 <a href="/archives"><img src="<?php bloginfo('template_url');?>/image/header.jpg"></a>
@@ -20,7 +20,6 @@
                     <i class="iconfont icon-instagram"></i>
                 </a>
         </div>
-    
-
+    </div>
 
 <?php get_footer(); ?>
