@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div class="container">
     <article class="post-wrap">
         <header class="post-header">
@@ -47,7 +46,7 @@
                 
                      <p class="copyright-item">
                          <span>Slogan:</span>
-                         <span>Do you believe in <strong>DESTINY<strong>?</strong></strong></span>
+                         <span>Do you believe in <strong>YUEHAN<strong>?</strong></strong></span>
                      </p>
                 
 
