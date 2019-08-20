@@ -3,7 +3,7 @@
 <div class="container">
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+            <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_content(); ?></a></h1>
             
                 <div class="post-meta">
                     
@@ -21,7 +21,7 @@
         </header>
 
         <div class="post-content">
-            <?php get_the_content(); ?> 
+            <?php the_content(); ?> 
         </div>
 
         
@@ -35,7 +35,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://yuehanliu.com/2019/08/11/hello-world/">http://yuehanliu.com/2019/08/11/hello-world/</a></span>
+                        <span><a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a></span>
                     </p>
                 
                 
