@@ -60,9 +60,16 @@
                     <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
                 </div>
                 <div class="menu" id="mobile-menu">
-                    
-                        <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
-                    
+                        <a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">Home</a>
+                        <?php 
+                            $pages = get_pages('sort_column=menu_order'); 
+                            foreach ( $pages as $page ) {
+                                $option = '<a class="menu-item" href="' . get_page_link( $page->ID ) . '">';
+                                $option .= $page->post_title;
+                                $option .= '</a>';
+                                echo $option;
+                            }
+                        ?>
                 </div>
             </div>
         </nav>
