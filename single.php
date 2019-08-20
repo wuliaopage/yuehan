@@ -67,7 +67,6 @@
             </div>
         </section>
         <section class="post-nav">
-        <?php comments_template(); ?>
             
         </section>
 
