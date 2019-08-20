@@ -20,5 +20,6 @@
                     <i class="iconfont icon-instagram"></i>
                 </a>
         </div>
+    </div>
 
 <?php get_footer(); ?>
