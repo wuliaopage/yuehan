@@ -24,8 +24,8 @@ Template Name: Blog List
         echo '</a>';
         
         // date 
-        echo '<span class="archive-item-date">'
-        the_time(get_option('date_format' ));
+        echo '<span class="archive-item-date">';
+        the_time(get_option('date_format'));
         echo '</span>';
         
         echo '</article>';
