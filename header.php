@@ -2,7 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php bloginfo('name'); ?></title>
+<!-- Title for SEO -->
+<title>
+<?php if ( is_home() ) {
+        bloginfo('name'); echo " - "; bloginfo('description');
+    } elseif ( is_category() ) {
+        single_cat_title(); echo " - "; bloginfo('name');
+    } elseif (is_single() || is_page() ) {
+        single_post_title();
+    } elseif (is_search() ) {
+        echo "搜索结果"; echo " - "; bloginfo('name');
+    } elseif (is_404() ) {
+        echo '页面未找到!';
+    } else {
+        wp_title('',true);
+    } ?>
+</title>
 <!-- Stylesheets -->
 <link rel="icon" href="<?php bloginfo('template_url');?>/favicon.ico">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style.css" type="text/css" media="screen" />
@@ -18,7 +33,11 @@
             <div class="container">
                 <div class="navbar-header header-logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
                 <div class="menu navbar-right">
-                        <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
+                    <ul id="navigation" class="grid_8">
+                        <?php wp_list_pages('depth=1&title_li=0&sort_column=menu_order'); ?>
+                        <li <?php if (is_home()) { echo 'class="current"';} ?>><a class="menu-item" title="<?php bloginfo('name'); ?>"  href="<?php echo get_option('home'); ?>/">主页</a></li>
+                    </ul>
+                    <a class="menu-item" href="<?php bloginfo('template_url');?>/archive.php">Posts</a>
                     <input id="switch_default" type="checkbox" class="switch_default">
                     <label for="switch_default" class="toggleBtn"></label>
                 </div>
