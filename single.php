@@ -36,7 +36,8 @@
         </div>
 
         <section class="post-nav">
-        <?php previous_post_link('%link'); ?>  <?php next_post_link('%link'); ?>
+        <div><?php previous_post_link('%link'); ?></div>
+        <div><?php next_post_link('%link'); ?></div>
         </section>
             <section class="post-copyright">
                 
