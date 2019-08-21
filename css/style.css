@@ -1011,6 +1011,7 @@ header label {
 }
 .post-nav{
   margin-top: 5rem;
+  overflow: auto;
 } 
 .post-nav:before,
 .post-nav:after {
