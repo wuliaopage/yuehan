@@ -76,6 +76,7 @@
                                 echo $option;
                             }
                         ?>
+                        <a class="menu-item" href="<?php echo get_option('home'); ?>/wp-admin/">Log in</a>
                 </div>
             </div>
         </nav>
