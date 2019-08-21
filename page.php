@@ -20,6 +20,15 @@
         </header>
 
         <div class="post-content">
+            
+            <?php
+            the_content();
+
+            wp_link_pages( array(
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'freeware' ),
+                'after'  => '</div>',
+            ) );
+            ?>
             <?php echo $post->post_content;?> 
         </div>
 
