@@ -2,6 +2,7 @@
 
 <div class="container">
     <article class="post-wrap">
+        <?php while (have_posts()):the_post(); ?>
         <header class="post-header">
             <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             
@@ -22,7 +23,7 @@
 
         <div class="post-content">
             <?php
-            while (have_posts()):the_post();
+            
             
             the_content();
 
@@ -30,7 +31,7 @@
                 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'freeware' ),
                 'after'  => '</div>',
             ) );
-            endwhile;
+            
             ?>
         </div>
 
@@ -85,7 +86,7 @@
             
         </section>
 
-
+        <?php endwhile;?>
     </article>
     
 </div>
