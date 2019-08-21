@@ -69,6 +69,7 @@
                 <?php
                 edit_post_link('Edit', '<span>', '</span>'); 
                 ?>
+                <?php endif; ?>
                 <!-- <span>Tag(s):</span> -->
                 <span class="tag">
                     
