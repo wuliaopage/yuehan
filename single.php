@@ -35,7 +35,9 @@
             ?>
         </div>
 
-        
+        <section class="post-nav">
+        <?php previous_post_link('上一篇: %link'); ?>  <?php next_post_link('下一篇:%link'); ?>
+        </section>
             <section class="post-copyright">
                 
                     <p class="copyright-item">
@@ -82,9 +84,7 @@
                 <a href="/">Home</a>
             </div>
         </section>
-        <section class="post-nav">
-        <?php previous_post_link('上一篇: %link'); ?>  <?php next_post_link('下一篇:%link'); ?>
-        </section>
+        
 
         <?php endwhile;?>
     </article>
