@@ -65,7 +65,11 @@
         
         <section class="post-tags">
             <div>
-                <span>Tag(s):</span>
+                <?php if ( get_edit_post_link() ) : ?>
+                <?php
+                edit_post_link('Edit', '<span>', '</span>'); 
+                ?>
+                <?php endif; ?>
                 <span class="tag">
                     
                 </span>
