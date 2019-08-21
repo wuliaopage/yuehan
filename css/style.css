@@ -918,7 +918,7 @@ header label {
   text-align: right;
 }
 .post-copyright {
-  margin-top: 5rem;
+  margin-top: 1rem;
   border-top: 1px solid #e8e8e8;
   border-bottom: 1px solid #e8e8e8;
 }
@@ -1008,6 +1008,9 @@ header label {
   padding: 1rem 0 1rem;
   display: flex;
   justify-content: space-between;
+}
+.post-nav{
+  margin-top: 5rem;
 }
 .post-nav:before,
 .post-nav:after {
