@@ -7,7 +7,7 @@
             
                 <div class="post-meta">
                     
-                        Author: <a itemprop="author" rel="author" href="/">Yuehan Liu</a>
+                        Author: <a itemprop="author" rel="author" href="/"><?php the_author(); ?></a>
                     
 
                     
@@ -39,7 +39,7 @@
                 
                     <p class="copyright-item">
                         <span>Author:</span>
-                        <span>Yuehan Liu</span>
+                        <span><?php the_author(); ?></span>
                     </p>
                 
                 
