@@ -15,14 +15,11 @@ function filter_next_post_link($link) {
 }
 add_filter('next_post_link', 'filter_next_post_link');
 
-// add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
-// add_filter('previous_posts_link_attributes', 'posts_link_attributes_prev');
+function filter_prev_post_link($link) {
+    $link = str_replace("rel=", 'class="prev" rel=', $link);
+    return $link;
+}
+add_filter('prev_post_link', 'filter_next_post_link');
 
-// function posts_link_attributes_prev() {
-//     return 'class="prev"';
-// };
-// function posts_link_attributes_next() {
-//     return 'class="next"';
-// };
 
 ?>

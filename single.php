@@ -36,7 +36,7 @@
         </div>
 
         <section class="post-nav">
-        <?php previous_post_link('上一篇: %link'); ?>  <?php next_post_link('下一篇:%link'); ?>
+        <?php previous_post_link(); ?>  <?php next_post_link(); ?>
         </section>
             <section class="post-copyright">
                 
