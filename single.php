@@ -21,7 +21,17 @@
         </header>
 
         <div class="post-content">
-            <?php echo $post->post_content;?> 
+            <?php
+            while (have_posts()):the_post();
+            
+            the_content();
+
+            wp_link_pages( array(
+                'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'freeware' ),
+                'after'  => '</div>',
+            ) );
+            endwhile;
+            ?>
         </div>
 
         
@@ -55,26 +65,10 @@
         
         <section class="post-tags">
             <div>
-            <?php if ( get_edit_post_link() ) : ?>
-            <?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'freeware' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span>',
-				'</span>'
-			);
-			?>
-                
+                <?php if ( get_edit_post_link() ) : ?>
+                <?php
+                edit_post_link('Edit', '<span>', '</span>'); 
+                ?>
                 <!-- <span>Tag(s):</span> -->
                 <span class="tag">
                     
