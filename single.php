@@ -33,7 +33,25 @@
             endwhile;
             ?>
         </div>
-
+        
+        <section class="post-tags">
+            <div>
+                <?php if ( get_edit_post_link() ) : ?>
+                <?php
+                edit_post_link('Edit', '<span>', '</span>'); 
+                ?>
+                <?php endif; ?>
+                <!-- <span>Tag(s):</span> -->
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">Back</a>
+                <span>· </span>
+                <a href="/">Home</a>
+            </div>
+        </section>
         
             <section class="post-copyright">
                 
@@ -63,24 +81,7 @@
 
             </section>
         
-        <section class="post-tags">
-            <div>
-                <?php if ( get_edit_post_link() ) : ?>
-                <?php
-                edit_post_link('Edit', '<span>', '</span>'); 
-                ?>
-                <?php endif; ?>
-                <!-- <span>Tag(s):</span> -->
-                <span class="tag">
-                    
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">Back</a>
-                <span>· </span>
-                <a href="/">Home</a>
-            </div>
-        </section>
+        
         <section class="post-nav">
             
         </section>
