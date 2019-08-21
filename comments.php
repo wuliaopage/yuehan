@@ -50,11 +50,9 @@ if ( post_password_required() ) {
     <li class="decmt-box">
         <p><a href="#addcomment">还没有任何评论，你来说两句吧</a></p>
     </li>
-    <?php 
-        } else {
-            wp_list_comments('type=comment');
-        }
-    ?>
+    <?php wp_list_comments( array(
+    'callback'     =>  'yuehan_comment',
+  	)); ?>
 
 	
 	</div>

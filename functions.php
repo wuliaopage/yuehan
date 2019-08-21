@@ -21,5 +21,7 @@ function filter_prev_post_link($link) {
 }
 add_filter('previous_post_link', 'filter_prev_post_link');
 
-
+function yuehan_comment( $comment, $args, $depth ) {
+    $GLOBALS['comment'] = $comment;
+}
 ?>
