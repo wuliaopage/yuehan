@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div class="container">
     <article class="post-wrap">
+    
         <header class="post-header">
             <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
             
@@ -20,16 +21,17 @@
         </header>
 
         <div class="post-content">
-            
             <?php
+            while (have_posts()):the_post();
+            
             the_content();
 
             wp_link_pages( array(
                 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'freeware' ),
                 'after'  => '</div>',
             ) );
+            endwhile;
             ?>
-            <?php echo $post->post_content;?> 
         </div>
 
         
