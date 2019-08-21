@@ -7,15 +7,15 @@ $args = array(
 );
 add_theme_support( 'custom-header', $args );
 
-apply_filters('next_posts_link_attributes', 'posts_link_attributes_next');
-apply_filters('previous_posts_link_attributes', 'posts_link_attributes_prev');
+// apply_filters('next_posts_link_attributes', 'posts_link_attributes_next');
+// apply_filters('previous_posts_link_attributes', 'posts_link_attributes_prev');
 
-function posts_link_attributes_prev() {
-    return 'class="prev"';
-}
-function posts_link_attributes_next() {
-    return 'class="next"';
-}
+// function posts_link_attributes_prev() {
+//     return 'class="prev"';
+// }
+// function posts_link_attributes_next() {
+//     return 'class="next"';
+// }
 
 
 ?>
