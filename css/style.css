@@ -1033,9 +1033,9 @@ header label {
   content: "<";
   margin-right: 0.5em;
 }
-.post-nav a.prev:hover {
+/* .post-nav a.prev:hover {
   transform: translateX(-4px);
-}
+} */
 .post-nav a.next {
   float: right;
 }
@@ -1043,9 +1043,9 @@ header label {
   content: ">";
   margin-left: 0.5em;
 }
-.post-nav a.next:hover {
+/* .post-nav a.next:hover {
   transform: translateX(4px);
-}
+} */
 .post-nav a.prev::before,
 .post-nav a.next::after {
   font-weight: bold;
