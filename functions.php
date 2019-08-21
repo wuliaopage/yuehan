@@ -15,8 +15,8 @@ function posts_link_attributes_next() {
     return 'class="next"';
 }
 
-apply_filters('next_posts_link_attributes', 'posts_link_attributes_next');
-apply_filters('previous_posts_link_attributes', 'posts_link_attributes_prev');
+add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_prev');
 
 
 
