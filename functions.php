@@ -7,10 +7,13 @@ $args = array(
 );
 add_theme_support( 'custom-header', $args );
 
-add_filter('next_posts_link_attributes', 'posts_link_attributes');
-add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+add_filter('next_posts_link_attributes', 'posts_link_attributes_next');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes_prev');
 
-function posts_link_attributes() {
+function posts_link_attributes_prev() {
+    return 'class="prev"';
+}
+function posts_link_attributes_next() {
     return 'class="next"';
 }
 
