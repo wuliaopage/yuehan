@@ -47,6 +47,8 @@
                                 echo $option;
                             }
                         ?>
+                        <a class="menu-item" href="<?php echo get_option('home'); ?>/wp-admin/">Log in</a>
+                        
                     <input id="switch_default" type="checkbox" class="switch_default">
                     <label for="switch_default" class="toggleBtn"></label>
                 </div>
