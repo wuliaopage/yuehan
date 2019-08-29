@@ -13,7 +13,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">the_time(get_option('datetime_format'));</a>
+                        Date: <a href="#"><?php the_time(get_option('datetime_format'));?></a>
                         </span>
                     
                     
