@@ -13,7 +13,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#"><?php the_time('Y-m-d G:i:s'); ?></a>
+                        Date: <a href="#"><?php the_time('Y年n月j日 ag:i'); ?></a>
                         </span>
                     
                     
