@@ -13,7 +13,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">August 11, 2019&nbsp;&nbsp;13:08:00</a>
+                        Date: <a href="#">the_time(get_option('datetime_format'));</a>
                         </span>
                     
                     
