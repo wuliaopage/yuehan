@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 			<?php
 			wp_list_comments(
 				array(
-					'callback' => 'twentytwelve_comment',
+					'callback' => 'yuehan_comment',
 					'style'    => 'ul',
 				)
 			);

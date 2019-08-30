@@ -21,9 +21,7 @@ function filter_prev_post_link($link) {
 }
 add_filter('previous_post_link', 'filter_prev_post_link');
 
-function yuehan_comment( $comment, $args, $depth ) {
-    $GLOBALS['comment'] = $comment;
-}
+
 
 if ( ! function_exists( 'twentytwelve_comment' ) ) :
 	/**
@@ -36,7 +34,7 @@ if ( ! function_exists( 'twentytwelve_comment' ) ) :
 	 *
 	 * @since Twenty Twelve 1.0
 	 */
-	function twentytwelve_comment( $comment, $args, $depth ) {
+	function yuehan_comment( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
 		switch ( $comment->comment_type ) :
 			case 'pingback':
@@ -72,14 +70,14 @@ if ( ! function_exists( 'twentytwelve_comment' ) ) :
 				?>
 				</header><!-- .comment-meta -->
 
-				<?php if ( '0' == $comment->comment_approved ) : ?>
+            <?php if ( '0' == $comment->comment_approved ) : ?>
 				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentytwelve' ); ?></p>
 			<?php endif; ?>
 
-				<section class="comment-content comment">
-				<?php comment_text(); ?>
-				<?php edit_comment_link( __( 'Edit', 'twentytwelve' ), '<p class="edit-link">', '</p>' ); ?>
-				</section><!-- .comment-content -->
+            <section class="comment-content comment">
+            <?php comment_text(); ?>
+            <?php edit_comment_link( __( 'Edit', 'twentytwelve' ), '<p class="edit-link">', '</p>' ); ?>
+            </section><!-- .comment-content -->
 
 				<div class="reply">
 				<?php
