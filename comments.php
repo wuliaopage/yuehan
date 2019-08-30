@@ -58,7 +58,7 @@ if ( post_password_required() ) {
 			'title_reply' => '',
 			// 评论框前后文字， 你的电子邮件不会被公开删除
 			'comment_notes_after' => '',
-			'comment_notes_before' => '',
+			'comment_notes_before' => '<div>zcxvcvxz</div>adsfas',
 			// Redefine your own textarea (the comment body).
 			'comment_field' => '<div class="comment-form-comment"><textarea id="comment" name="comment" class="comment-input" aria-required="true"></textarea></div>'
 
