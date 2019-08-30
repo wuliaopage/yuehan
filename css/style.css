@@ -1176,8 +1176,6 @@ header label {
 }
 .comment-form-author{
   margin: 0.5em 0.5em 0.5em 0!important;
-  flex:1;
-  display: flex;
 }
 .comment-form-author input
 {
@@ -1190,8 +1188,7 @@ header label {
 }
 .comment-form-email{
   margin: 0.5em 0.5em 0.5em 0!important;
-  flex:1;
-  display: flex;
+  margin-right: auto;
 }
 .comment-form-email input
 {
@@ -1205,7 +1202,6 @@ header label {
 
 .comment-footer .form-submit
 {
-  flex:1;
   display:flex;
   justify-content: flex-end;
 }
