@@ -1165,6 +1165,10 @@ header label {
   box-sizing: border-box;
 }
 
+.comment-footer{
+  display: flex;
+  flex-direction:row;
+}
 .comment-form-author input
 {
   background: #f0f2f7;
