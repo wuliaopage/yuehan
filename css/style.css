@@ -938,6 +938,9 @@ header label {
 .post-copyright .copyright-item {
   margin: 5px 0;
 }
+.post-copyright .copyright-item a{
+  word-wrap: break-word;
+}
 .post-copyright .lincese {
   font-weight: bold;
 }
