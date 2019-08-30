@@ -1169,7 +1169,15 @@ header label {
 {
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
-  padding: 6px;
+  padding: 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.comment-form-email input
+{
+  background: #f0f2f7;
+  border: 1px solid #f0f2f7;
+  padding: 3px;
   border-radius: 3px;
   box-sizing: border-box;
 }
