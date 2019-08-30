@@ -41,20 +41,24 @@ if ( post_password_required() ) {
 
 	<?php // You can start editing here -- including this comment! ?>
 	<?php 
-		$comments_args = array(
-        // Change the title of send button 
-        'label_submit' => __( '提交评论', 'textdomain' ),
-        // Change the title of the reply section
-        'title_reply' => __( 'Write a Reply or Comment', 'textdomain' ),
-        // 评论框前后文字， 你的电子邮件不会被公开删除
-		'comment_notes_after' => '',
-		'comment_notes_before' => '',
-        // Redefine your own textarea (the comment body).
-        'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
-		);
-		comment_form( $comments_args );
+		// $comments_args = array(
+        // // Change the title of send button 
+        // 'label_submit' => __( '提交评论', 'textdomain' ),
+        // // Change the title of the reply section
+        // 'title_reply' => __( '留言给YUEHAN', 'textdomain' ),
+        // // 评论框前后文字， 你的电子邮件不会被公开删除
+		// 'comment_notes_after' => '',
+		// 'comment_notes_before' => '',
+        // // Redefine your own textarea (the comment body).
+        // 'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
+		// );
+		// comment_form( $comments_args );
 	 ?>
-
+	<div class="submitted">
+		<input class="submit" name="submit" type="submit" id="submit" tabindex="5" value="提交留言" onclick="goSubmit()" />
+		<input class="reset" name="reset" type="reset" id="reset" tabindex="6" value="<?php esc_attr_e( '重写' ); ?>"/>
+		<?php comment_id_fields(); ?>
+	</div>	
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
