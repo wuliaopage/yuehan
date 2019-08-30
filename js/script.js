@@ -105,7 +105,7 @@ document.ready(
                var exdate=new Date()
                exdate.setDate(exdate.getDate()+expiredays)
                //请将domain改成你的域名
-               document.cookie=c_info+ "=" +escape(value)+";path=/;domain=.zhang.ge"+
+               document.cookie=c_info+ "=" +escape(value)+";path=/;domain=.yuehanliu.com"+
                ((typeof expiredays=="undefined") ? "" : "; expires="+exdate.toGMTString());
            }
            function checkCookie(){
