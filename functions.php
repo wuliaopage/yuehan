@@ -41,7 +41,7 @@ if ( ! function_exists( 'twentytwelve_comment' ) ) :
 			case 'trackback':
 				// Display trackbacks differently than normal comments.
 				?>
-		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+		<div <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 		<p><?php _e( 'Pingback:', 'twentytwelve' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?></p>
 				<?php
 				break;
@@ -49,7 +49,7 @@ if ( ! function_exists( 'twentytwelve_comment' ) ) :
 				// Proceed with normal comments.
 				global $post;
 				?>
-		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<div <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
 			<header class="comment-meta comment-author vcard">
 				<?php
