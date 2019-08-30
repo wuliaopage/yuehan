@@ -2,6 +2,7 @@
 html {
   line-height: 1.15 /* 1 */;
   -webkit-text-size-adjust: 100% /* 2 */;
+  overflow-y: overlay;
 }
 body {
   margin: 0;
@@ -1120,7 +1121,7 @@ header label {
   min-width: 200px;
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
-  padding: 5px 9px;
+  padding: 9px;
   border-radius: 6px;
   resize:none;
   box-sizing: border-box;
