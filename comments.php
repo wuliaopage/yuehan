@@ -45,11 +45,9 @@ if ( post_password_required() ) {
         // Redefine your own textarea (the comment body).
 		'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>'
 		
-	  )
-	
-	);
-		comment_form( );
-	 ?>
+		);
+		comment_form();
+	?>
 	
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
