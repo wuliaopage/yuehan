@@ -39,11 +39,11 @@ if ( post_password_required() ) {
 			'fields' => apply_filters('comment_form_default_fields', array(
 				'author' =>
 					'<p class="comment-form-author">' .
-					'<label for="author">' . __( '昵称', 'themetext' ) . '</label> ' .
+					'<label for="author">' . __( '昵称 ', 'themetext' ) . '</label> ' .
 					'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
 				'email' =>
-					'<p class="comment-form-email"><label for="email">' . __( '邮箱', 'themetext' ) . '</label> ' .
+					'<p class="comment-form-email"><label for="email">' . __( '邮箱 ', 'themetext' ) . '</label> ' .
 					'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
 				'url' =>'',
