@@ -28,103 +28,69 @@ if ( post_password_required() ) {
         die ('Please do not load this page directly. Thanks!');
 ?>
 
-	<div id="comments" class="comments-area">
-
-
-
-
-
-
-   
-
-
-
-
-
-	<?php 
-    if (!empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) { 
-        // if there's a password
-        // and it doesn't match the cookie
-    ?>
-    <li class="decmt-box">
-        <p><a href="#addcomment">请输入密码再查看评论内容.</a></p>
-    </li>
-    <?php 
-        } else if ( !comments_open() ) {
-    ?>
-    <li class="decmt-box">
-        <p><a href="#addcomment">评论功能已经关闭!</a></p>
-    </li>
-    <?php 
-        } else if ( !have_comments() ) { 
-    ?>
-    <li class="decmt-box">
-        <p><a href="#addcomment">还没有任何评论，你来说两句吧</a></p>
-    </li>
-    <?php wp_list_comments( array(
-    'callback'     =>  'yuehan_comment',
-  	)); ?>
-
-	
-	</div>
-</div><!-- #comments -->
-
-
-
-<?php
-/**
- * The template for displaying comments
- *
- * The area of the page that contains both current comments
- * and the comment form.
- *
- * @package WordPress
- * @subpackage Pure
- * @since Pure 1.0
- */
-/*
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
- */
-if ( post_password_required() ) {
+	if ( post_password_required() ) {
 	return;
 }
 ?>
 
 <div id="comments" class="comments-area">
 
+	<?php // You can start editing here -- including this comment! ?>
+
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'pure' ),
-					number_format_i18n( get_comments_number() ), get_the_title() );
+			if ( 1 === get_comments_number() ) {
+				printf(
+					/* translators: %s: The post title. */
+					__( 'One thought on &ldquo;%s&rdquo;', 'twentytwelve' ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			} else {
+				printf(
+					/* translators: %1$s: The number of comments. %2$s: The post title. */
+					_n( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentytwelve' ),
+					number_format_i18n( get_comments_number() ),
+					'<span>' . get_the_title() . '</span>'
+				);
+			}
 			?>
 		</h2>
 
-		<?php pure_comment_nav(); ?>
-
-		<ol class="comment-list">
+		<ol class="commentlist">
 			<?php
-				wp_list_comments( array(
-					'style'       => 'ol',
-					'short_ping'  => true,
-					'avatar_size' => 56,
-				) );
+			wp_list_comments(
+				array(
+					'callback' => 'twentytwelve_comment',
+					'style'    => 'ol',
+				)
+			);
 			?>
-		</ol><!-- .comment-list -->
+		</ol><!-- .commentlist -->
 
-		<?php pure_comment_nav(); ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<nav id="comment-nav-below" class="navigation" role="navigation">
+			<h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'twentytwelve' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentytwelve' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentytwelve' ) ); ?></div>
+		</nav>
+		<?php endif; // check for comment navigation ?>
+
+		<?php
+		/* If there are no comments and comments are closed, let's leave a note.
+		 * But we only want the note on posts and pages that had comments in the first place.
+		 */
+		if ( ! comments_open() && get_comments_number() ) :
+			?>
+		<p class="nocomments"><?php _e( 'Comments are closed.', 'twentytwelve' ); ?></p>
+		<?php endif; ?>
 
 	<?php endif; // have_comments() ?>
 
-	<?php
-		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
-	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'pure' ); ?></p>
-	<?php endif; ?>
-
 	<?php comment_form(); ?>
 
-</div><!-- .comments-area -->
+</div><!-- #comments .comments-area -->
+
+
+   
+
