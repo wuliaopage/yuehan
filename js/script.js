@@ -65,6 +65,18 @@ document.ready(
                 window.localStorage &&
                 window.localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light',)
             })
+            var cmtBtn = document.getElementsByClassName('commentToggleBtn')[0];
+            if(cmtBtn)
+            {
+                cmtBtn.addEventListener('click', () => {
+                var toggleMenu = document.getElementsByClassName("comments-area")[0];
+                if(toggleMenu.classList.contains("comment-hide")){
+                    toggleMenu.classList.remove("comment-hide")                   
+                }else{
+                    toggleMenu.classList.add("comment-hide")   
+                }
+            })
+            }
             // moblie
             document.getElementById('mobile-toggle-theme').addEventListener('click', () => {
                 if (document.getElementsByTagName('body')[0].classList.contains('dark-theme')) {

@@ -1,15 +1,4 @@
 <?php get_header(); ?>
-<script>
-        var cmtBtn = document.getElementsByClassName('commentToggleBtn')[0];
-        cmtBtn.addEventListener('click', () => {
-		var toggleMenu = document.getElementsByClassName("comments-area")[0];
-		if(toggleMenu.classList.contains("comment-hide")){
-			toggleMenu.classList.remove("comment-hide")                   
-		}else{
-			toggleMenu.classList.add("comment-hide")   
-		}
-	})
-</script>
 
 <div class="container">
     <article class="post-wrap">
