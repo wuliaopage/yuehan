@@ -1175,7 +1175,7 @@ header label {
   margin: 0;
 }
 .comment-form-author{
-  margin: 0.5em 0.5em 0.5em 0!important;
+  margin-right: 0.5em!important;
 }
 .comment-form-author input
 {
@@ -1187,8 +1187,7 @@ header label {
   box-sizing: border-box;
 }
 .comment-form-email{
-  margin: 0.5em 0.5em 0.5em 0!important;
-  margin-right: auto;
+  margin-right: auto !important;
 }
 .comment-form-email input
 {
