@@ -1112,11 +1112,8 @@ header label {
   width: 100%;
 }
 
-textarea #comment{
-  width: 100%;
-}
-
 .comment-input{
+  width: 100%;
   min-width: 200px;
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
