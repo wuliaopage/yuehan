@@ -81,7 +81,7 @@ document.ready(
             })
         };
         _Blog.toggleTheme();
-
+        
         // ready function.
 
     }
