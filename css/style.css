@@ -1207,7 +1207,7 @@ header label {
 
 .form-submit input
 {
-  background: linear-gradient(90deg,#4ABC9C,#1aBC9C);
+  background: #4ABC9C;
   color: #fff;
   padding: 6px 30px;
   border-radius: 6px;
