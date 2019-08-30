@@ -52,9 +52,10 @@ if ( post_password_required() ) {
         // // Redefine your own textarea (the comment body).
         // 'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
 		// );
-		// comment_form( $comments_args );
+		comment_form( $comments_args );
 	 ?>
 	<div class="submitted">
+		
 		<input class="submit" name="submit" type="submit" id="submit" tabindex="5" value="提交留言" onclick="goSubmit()" />
 		<input class="reset" name="reset" type="reset" id="reset" tabindex="6" value="<?php esc_attr_e( '重写' ); ?>"/>
 		<?php comment_id_fields(); ?>
