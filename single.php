@@ -78,7 +78,7 @@
                 </span>
                 <?php else:?>
                 <span class="commentBtnArea">
-                    <span>留言给YUEHAN</span>	
+                    <!-- <span>留言给YUEHAN</span>	 -->
                     <input id="comment_default" type="checkbox" class="comment_default">
                     <label for="comment_default" class="commentToggleBtn"></label>
                 </span>
