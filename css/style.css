@@ -1171,7 +1171,7 @@ header label {
   flex-wrap: wrap;
 }
 .comment-form-author{
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 0.5em 0.5em 0.5em 0!important;
 }
 .comment-reply-title{
   margin: 0;
@@ -1186,7 +1186,7 @@ header label {
   box-sizing: border-box;
 }
 .comment-form-email{
-  margin: 0.5em 0.5em 0.5em 0;;
+  margin: 0.5em 0.5em 0.5em 0!important;
 }
 .comment-form-email input
 {
