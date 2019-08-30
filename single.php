@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <script>
-		document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click', () => {
+        var cmtBtn = document.getElementsByClassName('commentToggleBtn')[0]
+        cmtBtn.addEventListener('click', () => {
 		var toggleMenu = document.getElementsByClassName("comments-area")[0];
 		if(toggleMenu.classList.contains("comment-hide")){
 			toggleMenu.classList.remove("comment-hide")                   
