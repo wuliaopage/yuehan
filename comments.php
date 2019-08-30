@@ -61,16 +61,16 @@ if ( post_password_required() ) {
 			?>
 		</h2>
 
-		<ol class="commentlist">
+		<div class="commentlist">
 			<?php
 			wp_list_comments(
 				array(
 					'callback' => 'yuehan_comment',
-					'style'    => 'div',
+					'style'    => 'ul',
 				)
 			);
 			?>
-		</ol><!-- .commentlist -->
+		</div><!-- .commentlist -->
 
 		<?php //if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<!-- <nav id="comment-nav-below" class="navigation" role="navigation">
