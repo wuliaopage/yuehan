@@ -81,60 +81,7 @@ document.ready(
             })
         };
         _Blog.toggleTheme();
-        function getCookie(c_info){
-            if (document.cookie.length>0){ 
-            c_start=document.cookie.indexOf(c_info + "=")
-            if (c_start!=-1){ 
-            c_start=c_start + c_info.length+1 
-            c_end=document.cookie.indexOf(";",c_start)
-            if (c_end==-1) {
-            c_end=document.cookie.length;
-            }
-            return unescape(document.cookie.substring(c_start,c_end));
-            } 
-            }
-            return null;
-           }
-           function removeCookie(name) { 
-               var cval=getCookie(name); 
-               if(cval!=null){
-                  setCookie(name,cval,-1);
-            }
-           } 
-           function setCookie(c_info,value,expiredays){
-               var exdate=new Date()
-               exdate.setDate(exdate.getDate()+expiredays)
-               //请将domain改成你的域名
-               document.cookie=c_info+ "=" +escape(value)+";path=/;domain=.yuehanliu.com"+
-               ((typeof expiredays=="undefined") ? "" : "; expires="+exdate.toGMTString());
-           }
-           function checkCookie(){
-            $("#comment-author-info input[type='text']").each(function(){
-            var val = getCookie(this.name);
-            this.value = val;
-            });
-            
-           }
-           function goSubmit(){
-            $("#comment-author-info input[type='text']").each(function(){
-            removeCookie(this.name);
-            setCookie(this.name,this.value,365);
-            });
-           }
-           function removeck(){
-            $("#comment-author-info input[type='text']").each(function(){
-            removeCookie(this.name);
-            }); 
-           }
-           $(document).ready(function(){
-               checkCookie();
-           $("#respond #submit").click(function(){
-               goSubmit();
-               });
-           $("#respond #reset").click(function(){
-               removeck();
-               });
-           });
+        
         // ready function.
 
     }
