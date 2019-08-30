@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 		$args = array(
 			'fields' => apply_filters('comment_form_default_fields', array(
 				'author' =>
-					'<p class="comment-form-author">' .
+					'<div class="comment-footer"><p class="comment-form-author">' .
 					'<label for="author">' . __( '昵称 ', 'themetext' ) . '</label> ' .
 					'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
