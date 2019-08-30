@@ -45,23 +45,7 @@ document.ready(
             // mobile
             document.getElementById("mobile-toggle-theme").innerText = "· Dark"
         }
-        const currentComment = window.localStorage && window.localStorage.getItem('comment');
-        const isHide = currentComment === 'hide';
-        var toggleMenu = document.getElementsByClassName("comments-area")[0];
-        console.log('fuck')
-        if (isHide) {
-            document.getElementById("comment_default").checked = true;
-            toggleMenu.classList.remove("comment-hide");  
-            console.log('YH')
         
-        } else {
-            document.getElementById("comment_default").checked = false;
-            toggleMenu.classList.add("comment-hide");
-            console.log('L')
-        
-        }
-
-
         _Blog.toggleTheme = function () {
             if (isDark) {
                 document.getElementsByTagName('body')[0].classList.add('dark-theme');
