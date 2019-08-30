@@ -51,17 +51,17 @@ if ( post_password_required() ) {
 		'comment_notes_before' => '',
         // Redefine your own textarea (the comment body).
         'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
-		'author' =>
-		'<p class="comment-form-author">'  .
-		'<input id="author" class="blog-form-input" placeholder="Your Name* " name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
-		'" size="30"' . $aria_req . ' /></p>',
+		// 'author' =>
+		// '<p class="comment-form-author">'  .
+		// '<input id="author" class="blog-form-input" placeholder="Your Name* " name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+		// '" size="30"' . $aria_req . ' /></p>',
   
-		'email' =>
-			'<p class="comment-form-email">'.
-			'<input id="email" class="blog-form-input" placeholder="Your Email Address* " name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-			'" size="30"' . $aria_req . ' /></p>',
+		// 'email' =>
+		// 	'<p class="comment-form-email">'.
+		// 	'<input id="email" class="blog-form-input" placeholder="Your Email Address* " name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+		// 	'" size="30"' . $aria_req . ' /></p>',
 	
-		'url' => ''
+		// 'url' => ''
 	  )
 	
 	);
