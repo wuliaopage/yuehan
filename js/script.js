@@ -56,7 +56,7 @@ document.ready(
                 // mobile
                 document.getElementById("mobile-toggle-theme").innerText = "· Light"
             }
-            
+
             document.getElementsByClassName('toggleBtn')[0].addEventListener('click', () => {
                 if (document.getElementsByTagName('body')[0].classList.contains('dark-theme')) {
                     document.getElementsByTagName('body')[0].classList.remove('dark-theme');
@@ -70,9 +70,9 @@ document.ready(
             document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click', () => {
                 var toggleMenu = document.getElementsByClassName("comments-area")[0];
                 if(toggleMenu.classList.contains("comment-hide")){
-                    toggleMenu.classList.remove("comment-hide")                   
+                    toggleMenu.classList.remove("comment-hide");                   
                 }else{
-                    toggleMenu.classList.add("comment-hide")   
+                    toggleMenu.classList.add("comment-hide");   
                 }
             })
             
