@@ -77,7 +77,7 @@ if ( post_password_required() ) {
 			'comment_notes_after' => '',
 			'comment_notes_before' => '',
 			// Redefine your own textarea (the comment body).
-			'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>'
+			'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" aria-required="true"></textarea></p>'
 
 		);
 		comment_form( $args ); 
