@@ -51,6 +51,9 @@ if ( post_password_required() ) {
 					'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
 				'url' =>'',
+				'cookies' => 
+					'<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">'.
+					'</p>'
 			)),
 			'label_submit' => '提交评论',
 			'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '留言', 'themetext' ) . '</label><textarea id="comment" name="comment" aria-required="true" cols="45" rows="8"></textarea></p>',
