@@ -31,7 +31,7 @@ if ( post_password_required() ) {
 ?>
 <div>
 	<input id="switch_default" type="checkbox" class="switch_default">
-	<label for="switch_default" class="toggleBtn"></label>
+	<label for="switch_default" class="commentToggleBtn"></label>
 </div>
 <script>
 	var mobileBtn = function f() {
