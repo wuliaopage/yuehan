@@ -29,12 +29,7 @@ if ( post_password_required() ) {
 
 
 ?>
-<div class="commentBtnArea">
-	<h3>留言给YUEHAN</h3>	
-	<input id="comment_default" type="checkbox" class="comment_default">
-	<label for="comment_default" class="commentToggleBtn"></label>
-	
-</div>
+
 
 <div id="comments" class="comments-area comment-hide">
 
