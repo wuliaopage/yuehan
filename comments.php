@@ -35,7 +35,24 @@ if ( post_password_required() ) {
 	<?php // You can start editing here -- including this comment! ?>
 	<?php 
 		$comments_args = array(
-        // Change the title of send button 
+		'fields' => apply_filters('comment_form_default_fields', array(
+			'author' =>
+				'<p class="comment-form-author">' .
+				'<label for="author">' . __( '姓名*', 'themetext' ) . '</label> ' .
+				'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+				'" size="30"' . $aria_req . ' /></p>',
+			'email' =>
+				'<p class="comment-form-email"><label for="email">' . __( '郵件*', 'themetext' ) . '</label> ' .
+				'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+				'" size="30"' . $aria_req . ' /></p>',
+			'url' =>
+				'<p class="comment-form-url"><label for="url">' .
+				__( '網址*', 'themetext' ) . '</label>' .
+				'<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
+				'" size="30" /></p>'
+		)),
+		
+			// Change the title of send button 
         'label_submit' => __( '提交评论', 'textdomain' ),
         // Change the title of the reply section
         'title_reply' => __( '留言给YUEHAN', 'textdomain' ),
