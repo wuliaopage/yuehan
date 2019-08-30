@@ -1164,13 +1164,7 @@ header label {
   resize:none;
   box-sizing: border-box;
 }
-.comment-form-author
-{
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 1em;
-}
+
 .comment-form-author input
 {
   background: #f0f2f7;
@@ -1179,13 +1173,7 @@ header label {
   border-radius: 3px;
   box-sizing: border-box;
 }
-.comment-form-email
-{
-  display: inline-block;
-  width: 200px;
-  height: 100px;
-  margin: 1em;
-}
+
 .comment-form-email input
 {
   background: #f0f2f7;
