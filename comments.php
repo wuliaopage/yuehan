@@ -66,7 +66,7 @@ if ( post_password_required() ) {
 			wp_list_comments(
 				array(
 					'callback' => 'twentytwelve_comment',
-					'style'    => 'ol',
+					'style'    => 'ul',
 				)
 			);
 			?>
