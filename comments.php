@@ -59,7 +59,7 @@ if ( post_password_required() ) {
 			'comment_field' => '<div class="comment-form-comment"><textarea id="comment" name="comment" class="comment-input" aria-required="true"></textarea></div>'
 
 		);
-		comment_form(  ); 
+		comment_form( $args ); 
 	?>
 	
 	<?php if ( have_comments() ) : ?>
