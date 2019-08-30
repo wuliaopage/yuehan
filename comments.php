@@ -29,7 +29,7 @@ if ( post_password_required() ) {
 
 
 ?>
-<div>
+<div class="commentBtnArea">
 	<input id="comment_default" type="checkbox" class="comment_default">
 	<label for="comment_default" class="commentToggleBtn"></label>
 </div>

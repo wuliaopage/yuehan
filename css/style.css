@@ -304,7 +304,11 @@ input[type="radio"]:not(:checked) + label:after {
     left: 17px;
 }
 
-
+.commentBtnArea label {
+  margin-left: 15px;
+  position: relative;
+  -webkit-transform: translateY(0.1em) translateX(0.5em);
+}
 .comment_default + label{
    background-color: #e6e6e6;
    border-radius:7px;
