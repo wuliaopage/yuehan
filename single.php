@@ -72,7 +72,7 @@
                 <?php
                 edit_post_link('Edit', '<span>', '</span>'); 
                 ?>
-                <?php else?>
+                <?php else:?>
                 <span class="commentBtnArea">
                     <h3>留言给YUEHAN</h3>	
                     <input id="comment_default" type="checkbox" class="comment_default">
