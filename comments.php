@@ -66,7 +66,7 @@ if ( post_password_required() ) {
 			wp_list_comments(
 				array(
 					'callback' => 'yuehan_comment',
-					'style'    => 'ul',
+					'style'    => 'div',
 				)
 			);
 			?>
