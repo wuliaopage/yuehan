@@ -1108,6 +1108,10 @@ header label {
   color: #808080;
 }
 
+.comment-form-comment{
+  width: 100%;
+}
+
 textarea #comment{
   width: 100%;
 }
