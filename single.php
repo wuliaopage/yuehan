@@ -72,8 +72,10 @@
                 <?php
                 edit_post_link('Edit', '<span>', '</span>'); 
                 ?>
-                <input id="comment_default" type="checkbox" class="comment_default">
-                <label for="comment_default" class="commentToggleBtn"></label>
+                <span class="commentBtnArea">
+                    <input id="comment_default" type="checkbox" class="comment_default">
+                    <label for="comment_default" class="commentToggleBtn"></label>
+                </span>
                 <?php else:?>
                 <span class="commentBtnArea">
                     <span>留言给YUEHAN</span>	
