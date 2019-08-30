@@ -84,6 +84,7 @@ if ( post_password_required() ) {
 			'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '留言', 'themetext' ) . '</label><textarea id="comment" name="comment" aria-required="true" cols="45" rows="8"></textarea></p>',
 			'comment_notes_after' => '',
 			'comment_notes_before' => '',
+			'comment_form_top' => 'ds',
 		);
 		comment_form( $args ); 
 	?>
