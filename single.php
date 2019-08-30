@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <script>
-        var cmtBtn = document.getElementsByClassName('commentToggleBtn')[0]
+        var cmtBtn = document.getElementsByClassName('commentToggleBtn')[0];
         cmtBtn.addEventListener('click', () => {
 		var toggleMenu = document.getElementsByClassName("comments-area")[0];
 		if(toggleMenu.classList.contains("comment-hide")){
@@ -8,8 +8,6 @@
 		}else{
 			toggleMenu.classList.add("comment-hide")   
 		}
-		window.localStorage &&
-		window.localStorage.setItem('comment', toggleMenu.classList.contains('comment-hide') ? 'hide' : 'show',)
 	})
 </script>
 
