@@ -51,15 +51,7 @@ if ( post_password_required() ) {
 		// 	),
 		
 		// 	// Change the title of send button 
-		// 	'label_submit' => __( '提交评论', 'textdomain' ),
-		// 	// Change the title of the reply section
-		// 	'title_reply' => __( '留言给YUEHAN', 'textdomain' ),
-		// 	// 评论框前后文字， 你的电子邮件不会被公开删除
-		// 	'comment_notes_after' => '',
-		// 	'comment_notes_before' => '',
-		// 	// Redefine your own textarea (the comment body).
-		// 	'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>'
-		
+		// 			
 		// );
 		// comment_form();
 
@@ -67,24 +59,26 @@ if ( post_password_required() ) {
 			'fields' => apply_filters('comment_form_default_fields', array(
 				'author' =>
 					'<p class="comment-form-author">' .
-					'<label for="author">' . __( '姓名*', 'themetext' ) . '</label> ' .
+					'<label for="author">' . __( '昵称', 'themetext' ) . '</label> ' .
 					'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
 				'email' =>
-					'<p class="comment-form-email"><label for="email">' . __( '郵件*', 'themetext' ) . '</label> ' .
+					'<p class="comment-form-email"><label for="email">' . __( '邮箱', 'themetext' ) . '</label> ' .
 					'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
-				'url' =>
-					'<p class="comment-form-url"><label for="url">' .
-					__( '網址*', 'themetext' ) . '</label>' .
-					'<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
-					'" size="30" /></p>'
+				'url' =>''
 			)),
-			'label_submit' => '發表留言',
+			'label_submit' => '提交评论',
 			'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( '留言', 'themetext' ) . '</label><textarea id="comment" name="comment" aria-required="true" cols="45" rows="8"></textarea></p>',
+			'comment_form_top' => 'ds',
+			'label_submit' => __( '提交评论', 'textdomain' ),
+			'title_reply' => __( '留言给YUEHAN', 'textdomain' ),
+			// 评论框前后文字， 你的电子邮件不会被公开删除
 			'comment_notes_after' => '',
 			'comment_notes_before' => '',
-			'comment_form_top' => 'ds',
+			// Redefine your own textarea (the comment body).
+			'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>'
+
 		);
 		comment_form( $args ); 
 	?>
