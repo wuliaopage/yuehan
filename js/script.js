@@ -45,6 +45,15 @@ document.ready(
             // mobile
             document.getElementById("mobile-toggle-theme").innerText = "· Dark"
         }
+        const currentComment = window.localStorage && window.localStorage.getItem('comment');
+        const isHide = currentComment === 'hide';
+        if (isHide) {
+            document.getElementById("comment_default").checked = true;
+        } else {
+            document.getElementById("comment_default").checked = false;
+        }
+
+
         _Blog.toggleTheme = function () {
             if (isDark) {
                 document.getElementsByTagName('body')[0].classList.add('dark-theme');
@@ -71,6 +80,8 @@ document.ready(
                 }else{
                     toggleMenu.classList.add("comment-hide")   
                 }
+                window.localStorage &&
+                window.localStorage.setItem('comment', toggleMenu.classList.contains('comment-hide') ? 'hide' : 'show',)
             })
             // moblie
             document.getElementById('mobile-toggle-theme').addEventListener('click', () => {
