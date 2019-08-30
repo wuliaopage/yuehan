@@ -40,11 +40,11 @@ if ( post_password_required() ) {
 				'author' =>
 					'<div class="comment-footer"><p class="comment-form-author">' .
 					'<label for="author">' . __( '昵称', 'themetext' ) . '</label> ' .
-					'<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+					'<input id="author" name="author" placeholder="必填" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
 				'email' =>
 					'<p class="comment-form-email"><label for="email">' . __( '邮箱', 'themetext' ) . '</label> ' .
-					'<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+					'<input id="email" name="email" placeholder="必填" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 					'" size="30"' . $aria_req . ' /></p>',
 				'url' =>'',
 				'cookies' => 
