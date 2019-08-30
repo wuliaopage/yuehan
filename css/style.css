@@ -1170,29 +1170,32 @@ header label {
   flex-direction:row;
   flex-wrap: wrap;
 }
-.comment-form-author{
-  margin: 0.5em 0.5em 0.5em 0!important;
-}
+
 .comment-reply-title{
   margin: 0;
+}
+.comment-form-author{
+  margin: 0.5em 0.5em 0.5em 0!important;
+  flex:1;
 }
 .comment-form-author input
 {
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
-  padding: 3px;
+  padding: 4px;
   margin: 0 5px;
   border-radius: 3px;
   box-sizing: border-box;
 }
 .comment-form-email{
   margin: 0.5em 0.5em 0.5em 0!important;
+  flex:1;
 }
 .comment-form-email input
 {
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
-  padding: 3px;
+  padding: 4px;
   margin: 0 5px;
   border-radius: 3px;
   box-sizing: border-box;
@@ -1200,6 +1203,7 @@ header label {
 
 .comment-footer .form-submit
 {
+  flex:1;
   display:flex;
   justify-content: flex-end;
 }
