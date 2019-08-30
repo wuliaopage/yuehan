@@ -60,7 +60,7 @@ if ( post_password_required() ) {
 			'comment_notes_after' => '',
 			'comment_notes_before' => '',
 			// Redefine your own textarea (the comment body).
-			'comment_field' => '<div class="comment-form-comment"><textarea id="comment" name="comment" placeholder="功能开发中... by FX" class="comment-input" aria-required="true"></textarea></div>'
+			'comment_field' => '<div class="comment-form-comment"><textarea id="comment" name="comment" placeholder="开发中..." class="comment-input" aria-required="true"></textarea></div>'
 
 		);
 		comment_form( $args ); 
