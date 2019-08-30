@@ -1168,22 +1168,29 @@ header label {
 .comment-footer{
   display: flex;
   flex-direction:row;
+  flex-wrap: wrap;
+}
+.comment-form-author{
+  margin: 0 5px;
 }
 .comment-form-author input
 {
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
   padding: 3px;
-  margin: 5px;
+  margin: 0 5px;
   border-radius: 3px;
   box-sizing: border-box;
 }
-
+.comment-form-email{
+  margin: 0 5px;
+}
 .comment-form-email input
 {
   background: #f0f2f7;
   border: 1px solid #f0f2f7;
   padding: 3px;
+  margin: 0 5px;
   border-radius: 3px;
   box-sizing: border-box;
 }
