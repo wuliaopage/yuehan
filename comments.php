@@ -30,21 +30,10 @@ if ( post_password_required() ) {
 
 ?>
 <div>
-	<input id="switch_default" type="checkbox" class="switch_default">
-	<label for="switch_default" class="commentToggleBtn"></label>
+	<input id="comment_default" type="checkbox" class="comment_default">
+	<label for="comment_default" class="commentToggleBtn"></label>
 </div>
-<script>
-	var mobileBtn = function f() {
-		var toggleMenu = document.getElementsByClassName("comments-area")[0];
-		if(toggleMenu.classList.contains("comment-hide")){
-		toggleMenu.classList.remove("comment-hide")
-			mobileMenu.classList.remove("comment-hide")
-		}else{
-			toggleMenu.classList.add("comment-hide")
-			mobileMenu.classList.add("comment-hide")
-		}
-	}
-</script>
+
 <div id="comments" class="comments-area comment-hide">
 
 	<?php // You can start editing here -- including this comment! ?>

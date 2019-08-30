@@ -304,6 +304,36 @@ input[type="radio"]:not(:checked) + label:after {
     left: 17px;
 }
 
+
+.comment_default + label{
+   background-color: #e6e6e6;
+   border-radius:7px;
+   cursor: pointer;
+   display: inline-block;
+   height: 14px;
+   position: relative;
+   box-shadow: 0.2px 0.2px 1px 0.5px rgb(180,180,180);
+   width: 30px;
+}
+.comment_default + label:after{
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 12px;
+  left: 1px;
+  position: absolute;
+  top: .5px;
+  width: 12px;
+  box-shadow: 0.2px 0.2px 1px 0.5px rgb(180,180,180);
+}
+.comment_default:checked + label{
+  background-color: #1ABC9C;
+  box-shadow:none;
+}
+.comment_default:checked + label:after{
+  left: 17px;
+}
+
 /*.switch_default + label{*/
 /*    background-color: #e6e6e6;*/
 /*    border-radius:12px;*/

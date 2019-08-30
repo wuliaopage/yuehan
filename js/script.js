@@ -67,11 +67,9 @@ document.ready(
             document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click', () => {
                 var toggleMenu = document.getElementsByClassName("comments-area")[0];
                 if(toggleMenu.classList.contains("comment-hide")){
-                toggleMenu.classList.remove("comment-hide")
-                    mobileMenu.classList.remove("comment-hide")
+                    toggleMenu.classList.remove("comment-hide")                   
                 }else{
-                    toggleMenu.classList.add("comment-hide")
-                    mobileMenu.classList.add("comment-hide")
+                    toggleMenu.classList.add("comment-hide")   
                 }
             })
             // moblie
