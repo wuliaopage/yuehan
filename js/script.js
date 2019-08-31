@@ -61,7 +61,6 @@ document.ready(
                 document.getElementById("comment_default").checked = false;
                 toggleMenu.classList.add("comment-hide");
                 console.log('L')
-            
             }
         }
 
@@ -96,6 +95,7 @@ document.ready(
                     toggleMenu.classList.add("comment-hide")  
                 }
                 })
+                console.log(toggleMenu.classList.contains('comment-hide'))
                 window.localStorage &&
                 window.localStorage.setItem('comment', toggleMenu.classList.contains('comment-hide') ? 'hide' : 'show',)
             }
