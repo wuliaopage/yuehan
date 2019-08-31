@@ -1154,10 +1154,6 @@ header label {
 }
 .comment-hide{
   display: none;
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
 }
 .comment-form-comment{
   width: 100%;
