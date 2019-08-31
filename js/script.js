@@ -94,12 +94,13 @@ document.ready(
                     }else{
                         toggleMenu.classList.add("comment-hide")  
                     }
+                        console.log('1')
+                        console.log(toggleMenu.classList.contains("comment-hide"))
+                        
                         window.localStorage &&
-                        window.localStorage.setItem('comment', toggleMenu.classList.contains('comment-hide') ? 'hide' : 'show',)
+                        window.localStorage.setItem('comment', toggleMenu.classList.contains("comment-hide") ? 'hide' : 'show',)
                 })
-
-                
-                            }
+            }
             // moblie
             document.getElementById('mobile-toggle-theme').addEventListener('click', () => {
                 if (document.getElementsByTagName('body')[0].classList.contains('dark-theme')) {
