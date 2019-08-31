@@ -70,9 +70,11 @@ document.ready(
                 var toggleMenu = document.getElementsByClassName("comments-area")[0];
                 console.log('fuck')
                 if(toggleMenu.classList.contains("comment-hide")){
-                    toggleMenu.classList.remove("comment-hide")                   
+                    toggleMenu.classList.remove("comment-hide")   
+                    console.log('Y')                
                 }else{
-                    toggleMenu.classList.add("comment-hide")   
+                    toggleMenu.classList.add("comment-hide")
+                    console.log('Y')   
                 }
             })
             // moblie
