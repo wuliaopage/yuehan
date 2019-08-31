@@ -1146,12 +1146,7 @@ header label {
 .post-toc .tocbot-list-menu a:hover {
   color: #808080;
 }
-.comments-area{
-  -webkit-transition: all ease 0.4s;
-  -moz-transition: all ease 0.4s;
-  -o-transition: all ease 0.4s;
-  transition: all ease 0.4s;
-}
+
 .comment-hide{
   display: none;
 }
