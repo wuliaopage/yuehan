@@ -56,7 +56,7 @@ document.ready(
                 toggleMenu.classList.remove("comment-hide");            
             } else {
                 document.getElementById("comment_default").checked = false;
-                toggleMenu.classList.add("comment-hide");                
+                toggleMenu.classList.add("comment-hide");                 
             }
         }
 
