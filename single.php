@@ -70,7 +70,7 @@
             <div>
                 <?php if ( get_edit_post_link() ) : ?>
                 <?php
-                edit_post_link('Edit', '<span>', '</span>'); 
+                    edit_post_link('Edit', '<span>', '</span>'); 
                 ?>
                 <span class="commentBtnArea">
                     <input id="comment_default" type="checkbox" class="comment_default">
