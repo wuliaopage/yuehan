@@ -104,7 +104,7 @@
     
 </div>
 
-<script>
+<!-- <script>
 document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click', () => {
                 var toggleMenu = document.getElementsByClassName("comments-area")[0];
                 if(toggleMenu.classList.contains("comment-hide")){
@@ -113,6 +113,6 @@ document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click',
                     toggleMenu.classList.add("comment-hide");   
                 }
             })
-</script>
+</script> -->
 
 <?php get_footer(); ?>

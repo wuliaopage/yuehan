@@ -67,7 +67,15 @@ document.ready(
                 window.localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light',)
             })
 
-            
+            document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click', () => {
+                var toggleMenu = document.getElementsByClassName("comments-area")[0];
+                if(toggleMenu.classList.contains("comment-hide")){
+                    toggleMenu.classList.remove("comment-hide");                   
+                }else{
+                    toggleMenu.classList.add("comment-hide");   
+                }
+            })
+
             
             // moblie
             document.getElementById('mobile-toggle-theme').addEventListener('click', () => {
