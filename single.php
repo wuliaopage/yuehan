@@ -104,6 +104,8 @@
     
 </div>
 
+
+<!-- Unstable Bug -->
 <!-- <script>
 document.getElementsByClassName('commentToggleBtn')[0].addEventListener('click', () => {
                 var toggleMenu = document.getElementsByClassName("comments-area")[0];

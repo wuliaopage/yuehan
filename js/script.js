@@ -71,13 +71,10 @@ document.ready(
             {
                 cmdBtn.addEventListener('click', () => {
                 var toggleMenu = document.getElementsByClassName("comments-area")[0];
-                console.log('fuck')
                 if(toggleMenu.classList.contains("comment-hide")){
-                    toggleMenu.classList.remove("comment-hide")   
-                    console.log('Y')                
+                    toggleMenu.classList.remove("comment-hide")                  
                 }else{
-                    toggleMenu.classList.add("comment-hide")
-                    console.log('Y')   
+                    toggleMenu.classList.add("comment-hide")  
                 }
                 })
             }
