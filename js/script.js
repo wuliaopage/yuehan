@@ -47,17 +47,16 @@ document.ready(
         }
         
         const currentComment = window.localStorage && window.localStorage.getItem('comment');
-        const isHide = currentComment === 'hide';
+        const isShow = currentComment === 'show';
         var toggleMenu = document.getElementsByClassName("comments-area")[0];
         if(toggleMenu)
         {
-            if (isHide) {
+            if (isShow) {
                 document.getElementById("comment_default").checked = true;
-                toggleMenu.classList.add("comment-hide");
-            
+                toggleMenu.classList.remove("comment-hide");            
             } else {
                 document.getElementById("comment_default").checked = false;
-                toggleMenu.classList.remove("comment-hide");
+                toggleMenu.classList.add("comment-hide");                
             }
         }
 
