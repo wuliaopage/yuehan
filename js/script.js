@@ -88,14 +88,14 @@ document.ready(
             if(cmdBtn)
             {
                 cmdBtn.addEventListener('click', () => {
-                var toggleMenu = document.getElementsByClassName("comments-area")[0];
-                if(toggleMenu.classList.contains("comment-hide")){
-                    toggleMenu.classList.remove("comment-hide")                  
-                }else{
-                    toggleMenu.classList.add("comment-hide")  
-                }
-                    window.localStorage &&
-                    window.localStorage.setItem('comment', toggleMenu.classList.contains('comment-hide') ? 'hide' : 'show',)
+                    var toggleMenu = document.getElementsByClassName("comments-area")[0];
+                    if(toggleMenu.classList.contains("comment-hide")){
+                        toggleMenu.classList.remove("comment-hide")                  
+                    }else{
+                        toggleMenu.classList.add("comment-hide")  
+                    }
+                        window.localStorage &&
+                        window.localStorage.setItem('comment', toggleMenu.classList.contains('comment-hide') ? 'hide' : 'show',)
                 })
 
                 
