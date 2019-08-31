@@ -51,16 +51,13 @@ document.ready(
         var toggleMenu = document.getElementsByClassName("comments-area")[0];
         if(toggleMenu)
         {
-            console.log('fuck')
             if (isHide) {
                 document.getElementById("comment_default").checked = true;
-                toggleMenu.classList.remove("comment-hide");  
-                console.log('YH')
+                toggleMenu.classList.add("comment-hide");
             
             } else {
                 document.getElementById("comment_default").checked = false;
-                toggleMenu.classList.add("comment-hide");
-                console.log('L')
+                toggleMenu.classList.remove("comment-hide");
             }
         }
 
@@ -94,11 +91,8 @@ document.ready(
                     }else{
                         toggleMenu.classList.add("comment-hide")  
                     }
-                        console.log('1')
-                        console.log(toggleMenu.classList.contains("comment-hide"))
-                        
-                        window.localStorage &&
-                        window.localStorage.setItem('comment', toggleMenu.classList.contains("comment-hide") ? 'hide' : 'show',)
+                    window.localStorage &&
+                    window.localStorage.setItem('comment', toggleMenu.classList.contains("comment-hide") ? 'hide' : 'show',)
                 })
             }
             // moblie
